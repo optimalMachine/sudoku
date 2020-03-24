@@ -23,6 +23,6 @@ def print_board (bd):
                 print (bd[i][j])
             else:
                 print (str(bd[i][j]) + ' ', end='')
-        '''
+
 
 print_board(board)
