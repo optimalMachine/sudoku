@@ -10,4 +10,19 @@ board = [
     [0, 4, 9, 2, 0, 6, 0, 0, 7]
 ]
 
+def print_board (bd):
+    for i in range(len(bd)):
+        if i % 3 == 0 and i != 0:
+            print ('- - - - - - - - - - - -')
 
+        for j in range(len(bd[0])):
+            if j % 3 == 0 and j != 0:
+                print (' | ', end='')
+
+            if j == 8:
+                print (bd[i][j])
+            else:
+                print (str(bd[i][j]) + ' ', end='')
+        '''
+
+print_board(board)
